@@ -1,11 +1,11 @@
 *{
-color: #212121;
+color: white;
 gap: 0;
 padding: 0;
 }
 
 .bGC{
-background-color: #773a00;
+background-color: #1A1A1D;
 width: 100vw;
 height: 100vh;
 padding-left: 5px;
@@ -14,4 +14,177 @@ padding-bottom: 5px;
 max-width: fit-content;
 }
 
+  /* Header */
+  
+  nav{
+    display: none;
+  }
+
+  header {
+    position: fixed;
+    top: 32px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    z-index: 31;
+  }
+
+  .topRight {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    text-align: right;
+    font-size: 23px;
+    z-index: 10;
+    color: #212121;
+  }
+  
+  .whatsappUlasim {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #E67514;
+    font-size: 14px;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    z-index: 31;
+  }
+  
+
+  .telNo {
+    color: white;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .logo1 {
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: -50px;
+    margin-top: 0px;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+  }
+  
+.flex a h3{
+ color: #212121;
+ font-weight: 400;
+ font-size: 14px;
+}
+
+  a {
+    color: white;
+  }
+  /* Footer */
+
+  /* Main */
+.bGC h2{
+margin-top: 130px;
+}
+
+
+.bGC{
+  color: white;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+ /* Main End */
+
+  .footerBG{  
+    position:fixed;  
+    bottom: 0;
+    min-width: 100%;
+    }
+  
+    .footerdiv {
+      background-color: white;
+      height: 32px;
+      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  
+    .logo {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  
+    .logo i{
+    font-size: 20px;
+    }
+  
+    .footerDes {
+      text-align: left;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .flex, .topRight{
+      display: none;
+  
+  
+      .video-background {
+        position: fixed;
+        overflow: hidden;
+        z-index: -1;
+      }
+    
+      .video-background iframe {
+        position: absolute;
+        border: none;
+        pointer-events: none; /* tıklamayı engeller */
+        width: 100%;
+        height: 100%;
+        
+      }
+      
+  }
+  
+  
+  nav{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-start;
+  right: 0;
+  }
+  
+  .boxes{
+      transform: scale(.95);
+  }
+  
+  
+    }
+  *{
+    color: white;
+  }
+  
 
