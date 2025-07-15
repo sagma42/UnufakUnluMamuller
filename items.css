@@ -93,12 +93,6 @@
     height: auto !important;
   }
   
-  .logo1:hover {
-    cursor: pointer;
-    width: 95px !important;
-    height: auto !important;
-  }
-  
   .flex {
     position: relative;
     display: flex;
@@ -112,14 +106,7 @@
     text-decoration: none;
     color: #212121;
   }
-  
-  a:hover {
-    position: static;
-    transform: scale(1.15);
-    transition: .5s;
-    color: #06923E;
-    text-shadow: 3px 1px 7px #212121;
-  }
+
 /*-------------------------------------------------------------*/
 /*Main Start*/
 .anaSayfaBG{

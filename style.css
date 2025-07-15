@@ -7,15 +7,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
   }
   
   html {
     scroll-behavior: smooth;
-    
-  }
-  
-  body {
-    font-family: sans-serif;
   }
   
   /*-------------------------------------------------------------*/
@@ -26,21 +24,22 @@
   }
 
   header {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 32px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 120px;
-    background-color: #E67514;
-    padding-left: 20px;
-    padding-right: 40px;
-    opacity: 1;
-    z-index: 3;
+    min-height: 50px;
+    max-height: 50px;
+    background-color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    z-index: 31;
   }
 
   .topRight {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     padding: 10px 15px;
@@ -51,99 +50,80 @@
   }
   
   .whatsappUlasim {
-    position: relative;
-    right: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #E67514;
+    font-size: 14px;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-height: 32px;
+    max-height: 32px;
+    z-index: 31;
   }
   
-  .withWhatsapp {
-    position: relative;
-    right: 15px;
-  }
-  
-  .fa-brands.fa-whatsapp.fa-3x {
-    position: absolute;
-    font-size: 35px;
-    right: 190px;
-    bottom: -4.3px;
-    z-index: 4;
-    cursor: none;
-    pointer-events: none;
-    user-select: none;
-  }
-  
+
   .telNo {
-    color: black;
-    font-size: 25px;
+    color: white;
+    font-size: 14px;
     position: relative;
-    left: 20px;
-  }
-  
-  .telNo:hover {
-    transition: 1.2s;
-    color: #06923E;
-    cursor: pointer;
   }
   
   .logo1 {
-    width: 90px !important;
-    height: auto !important;
-  }
-  
-  .logo1:hover {
-    cursor: pointer;
-    width: 95px !important;
-    height: auto !important;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: -50px;
+    margin-top: 0px;
   }
   
   .flex {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 60px;
-    font-size: 19px;
+    gap: 32px;
   }
   
+.flex a h3{
+ color: #212121;
+ font-weight: 400;
+ font-size: 14px;
+}
+
   a {
-    text-decoration: none;
     color: #212121;
   }
-  
-  a:hover {
-    position: static;
-    transform: scale(1.15);
-    transition: .5s;
-    color: #06923E;
-    text-shadow: 3px 1px 7px #212121;
-  }
+ 
   
   /*-------------------------------------------------------------*/
   /* Main */
   
   .ana {
-    position: relative;
+
     width: 100%;
+    height: 100%;
     min-height: 100vh;
     overflow: hidden;
     background: none;
+    pointer-events: none;
   }
 
   .video-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    z-index: -1;
     pointer-events: none; /* Sağ/sol tık, tıklama tamamen engellenir */
   }
   
   .video-bg iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100vw;
     height: 56.25vw; /* 16:9 oranı: 9/16 = 0.5625 */
     pointer-events: none; /* Sağ/sol tık, tıklama tamamen engellenir */
@@ -175,47 +155,37 @@
 
   /*-------------------------------------------------------------*/
   /* Footer */
+
   .footerBG{  
   position:fixed;  
   bottom: 0;
   min-width: 100%;
   }
 
-
   .footerdiv {
-    background-color: #E67514;
-    min-height: 110px;
+    background-color: white;
+    height: 32px;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 10px 5px;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .logo {
     position: relative;
-    margin-top: 0;
-    padding-top: 0;
-    z-index: 5;
-    opacity: .72;
-  }
-  
-  .logo1 {
     display: flex;
-    float: right;
+    align-items: center;
+    gap: 16px;
   }
-  
+
+  .logo i{
+  font-size: 20px;
+  }
+
   .footerDes {
     text-align: left;
-  }
-  
-  .telNoFooter {
-    color: black;
-    font-size: 20px;
-  }
-  
-  .telNoFooter:hover {
-    transition: 1.3s;
-    color: #06923E;
-    text-shadow: 3px 1px 7px #212121;
-    cursor: pointer;
   }
   
   @media only screen and (max-width: 600px) {
