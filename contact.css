@@ -65,7 +65,7 @@
     max-height: 32px;
     z-index: 31;
   }
-  
+
 
   .telNo {
     color: white;
@@ -105,39 +105,31 @@
   
   /*-------------------------------------------------------------*/
   /* Main */
-  
-  .ana {
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-    background: none;
-    pointer-events: none;
-  }
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1D;
+}
 
-  .video-bg {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none; /* Sağ/sol tık, tıklama tamamen engellenir */
-  }
-  
-  .video-bg iframe {
-    width: 100vw;
-    height: 56.25vw; /* 16:9 oranı: 9/16 = 0.5625 */
-    pointer-events: none; /* Sağ/sol tık, tıklama tamamen engellenir */
-  }
-  
-  @media (max-aspect-ratio: 16/9) {
-    .video-bg iframe {
-      width: 177.78vh;   /* 100 * 16 / 9 */
-      height: 100vh;
-    }
-  }
+.mainText{
+position: absolute;
+display: flex;
+top: 150px;
+gap: 32px;
+padding-left: 20px;
+}
 
-  h2{
-  color: #212121;
-  }
+.mainText a{
+  color: white;
+}
+
+.map{
+  position: fixed;
+  top: 300px;
+  left: 0;
+  padding-left: 20px;
+}
 
   /*-------------------------------------------------------------*/
   /* Footer */
