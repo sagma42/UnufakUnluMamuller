@@ -179,10 +179,23 @@
       height: 100vh;
     }
   }
+  
+  @media screen and (width <= 600px) {
+    
+    @media (max-aspect-ratio: 9/16) {
+      .video-bg iframe {
+        margin-right: 0;
+        width: 155vh;   /* 100 * 16 / 9 */
+        height: 100vh;
+      }
+    }
+
+  }
 
   h2{
   color: #212121;
   }
+
 
 
   
