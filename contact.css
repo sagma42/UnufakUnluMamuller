@@ -181,6 +181,14 @@ margin-left: 20px;
   padding-left: 20px;
 }
 
+@media screen and (width <= 600px) {
+  .map iframe{
+    margin-top: 10px;
+    width: 332px;
+    height: 320px;
+  }
+}
+
 
   /*-------------------------------------------------------------*/
   /* Footer */
