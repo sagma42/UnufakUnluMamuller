@@ -1,22 +1,20 @@
 /*-------------------------------------------------------------*/
 /* Genel Ayarlar */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    height: auto;
-    width: auto;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
-  }    
-
+  }
   
   html {
     scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: sans-serif;
   }
   
   html, body {
@@ -25,9 +23,9 @@
   
 
   /*-------------------------------------------------------------*/
-   /* Header */
+  /* Header */
   
-   nav{
+  nav{
     display: none;
   }
 
@@ -41,7 +39,7 @@
     min-height: 50px;
     max-height: 50px;
     background-color: white;
-    padding-left: 32px;
+    padding-left: 6px;
     padding-right: 32px;
     z-index: 31;
   }
@@ -64,7 +62,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #E67514;
+    background-color: #FE7743;
     font-size: 14px;
     color: white;
     padding-left: 32px;
@@ -97,7 +95,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    right: 0;
     gap: 32px;
+    flex: content;
   }
   
 .flex a h3{
@@ -110,11 +110,13 @@
     color: #212121;
   }
  
-
-    .mobileHeader{
+  .mobileHeader{
   color: #212121;
-  position: static;
+  position: absolute;
   display: flex;
+  right: 0;
+  flex-direction: row;
+  
   }
 
   @media screen and (width >= 601px) {
@@ -126,17 +128,26 @@
 
   @media screen and (width <= 600px) {
     .mobileHeader a{
-    padding: 7px;
-    right: 22px;
-    flex: content;
+    padding: 6px;
   }
 
     .flex a{
       display: none;
     }
 
+    .logo1 {
+      min-height: 80px;
+      max-height: 80px;
+      min-width: 80px;
+      max-width: 80px;
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: -50px;
+      margin-top: 0px;
+      right: 50px;
+    }
   }
-
 
 /*-------------------------------------------------------------*/
 /*Main Start*/
@@ -235,9 +246,25 @@
       pointer-events: none; /* tıklamayı engeller */
       width: 100%;
       height: 100%;
-      
     }
     
+}
+
+@media screen and (width <= 600px) {
+.footerDesc{
+  margin-top: 2px;
+display: flex;
+font-size: 10px;
+flex:content;
+flex-direction: row;
+left: 0;
+padding-left: 1px;
+}
+
+.unUfakMobileX{
+  display: none;
+}
+
 }
 
 

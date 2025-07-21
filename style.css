@@ -33,7 +33,7 @@
     min-height: 50px;
     max-height: 50px;
     background-color: white;
-    padding-left: 32px;
+    padding-left: 6px;
     padding-right: 32px;
     z-index: 31;
   }
@@ -106,8 +106,11 @@
  
   .mobileHeader{
   color: #212121;
-  position: static;
+  position: absolute;
   display: flex;
+  right: 0;
+  flex-direction: row;
+  
   }
 
   @media screen and (width >= 601px) {
@@ -119,15 +122,29 @@
 
   @media screen and (width <= 600px) {
     .mobileHeader a{
-    padding: 7px;
-    right: 22px;
-    flex: content;
+    padding: 6px;
   }
 
     .flex a{
       display: none;
     }
 
+    header{
+      
+    }
+
+    .logo1 {
+      min-height: 80px;
+      max-height: 80px;
+      min-width: 80px;
+      max-width: 80px;
+      background-color: white;
+      border-radius: 50%;
+      padding: 10px;
+      margin-bottom: -50px;
+      margin-top: 0px;
+      right: 50px;
+    }
   }
 
   
@@ -191,7 +208,7 @@
 
   .footerdiv {
     background-color: white;
-    height: 32px;
+    height: 42px;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -234,7 +251,23 @@
       height: 100%;
       
     }
-    
+  }
+
+@media screen and (width <= 600px) {
+.footerDesc{
+  margin-top: 2px;
+display: flex;
+font-size: 10px;
+flex:content;
+flex-direction: row;
+left: 0;
+padding-left: 1px;
+}
+
+.unUfakMobileX{
+  display: none;
+}
+
 }
 
 
@@ -250,8 +283,7 @@ right: 0;
     transform: scale(.95);
 }
 
-
-  }
+}
 
 
   
