@@ -101,6 +101,33 @@
   a {
     color: #212121;
   }
+
+  .mobileHeader{
+    color: #212121;
+    position: static;
+    display: flex;
+    }
+  
+    @media screen and (width >= 601px) {
+      .mobileHeader a{
+        display: none;
+        cursor: none;
+      }
+    }
+  
+    @media screen and (width <= 600px) {
+      .mobileHeader a{
+      padding: 7px;
+      right: 22px;
+      flex: content;
+    }
+  
+      .flex a{
+        display: none;
+      }
+  
+    }
+  
  
   
   /*-------------------------------------------------------------*/
@@ -137,6 +164,7 @@ margin-left: 20px;
   left: 0;
   padding-left: 20px;
 }
+
 
   /*-------------------------------------------------------------*/
   /* Footer */

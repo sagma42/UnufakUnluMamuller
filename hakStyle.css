@@ -1,19 +1,22 @@
-*{
-color: white;
-gap: 0;
-padding: 0;
-}
+/*-------------------------------------------------------------*/
+/* Genel Ayarlar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.bGC{
-background-color: #1A1A1D;
-width: 100vw;
-height: 100vh;
-padding-left: 5px;
-padding-top: 5px;
-padding-bottom: 5px;
-max-width: fit-content;
-}
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /*-------------------------------------------------------------*/
   /* Header */
   
   nav{
@@ -53,7 +56,7 @@ max-width: fit-content;
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: #E67514;
+    background-color: #FE7743;
     font-size: 14px;
     color: white;
     padding-left: 32px;
@@ -62,7 +65,7 @@ max-width: fit-content;
     max-height: 32px;
     z-index: 31;
   }
-  
+
 
   .telNo {
     color: white;
@@ -96,95 +99,134 @@ max-width: fit-content;
 }
 
   a {
-    color: white;
+    color: #212121;
   }
-  /* Footer */
 
+  .mobileHeader{
+    color: #212121;
+    position: static;
+    display: flex;
+    }
+  
+    @media screen and (width >= 601px) {
+      .mobileHeader a{
+        display: none;
+        cursor: none;
+      }
+    }
+  
+    @media screen and (width <= 600px) {
+      .mobileHeader a{
+      padding: 7px;
+      right: 22px;
+      flex: content;
+    }
+  
+      .flex a{
+        display: none;
+      }
+  
+    }
+  
+ 
+  
+  /*-------------------------------------------------------------*/
   /* Main */
-.bGC h2{
-margin-top: 130px;
+.main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1D;
 }
-
 
 .bGC{
-  color: white;
-  min-width: 100%;
-  min-height: 100%;
-}
+  background-color: #1A1A1D;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: fit-content;
+  }
 
- /* Main End */
+  .bGC h2{
+    position: relative;
+    top: 142px;
+
+  }
+
+  /*-------------------------------------------------------------*/
+  /* Footer */
 
   .footerBG{  
-    position:fixed;  
-    bottom: 0;
-    min-width: 100%;
-    }
-  
-    .footerdiv {
-      background-color: white;
-      height: 32px;
-      font-size: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-  
-    .logo {
-      position: relative;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-  
-    .logo i{
-    font-size: 20px;
-    }
-  
-    .footerDes {
-      text-align: left;
-    }
-    
-    @media only screen and (max-width: 600px) {
-      .flex, .topRight{
-      display: none;
-  
-  
-      .video-background {
-        position: fixed;
-        overflow: hidden;
-        z-index: -1;
-      }
-    
-      .video-background iframe {
-        position: absolute;
-        border: none;
-        pointer-events: none; /* tıklamayı engeller */
-        width: 100%;
-        height: 100%;
-        
-      }
-      
+  position:fixed;  
+  bottom: 0;
+  min-width: 100%;
   }
-  
-  
-  nav{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: flex-start;
-  right: 0;
-  }
-  
-  .boxes{
-      transform: scale(.95);
-  }
-  
-  
-    }
-  *{
-    color: white;
-  }
-  
 
+  .footerdiv {
+    background-color: white;
+    height: 32px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .logo i{
+  font-size: 20px;
+  }
+
+  .footerDes {
+    text-align: left;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .flex, .topRight{
+    display: none;
+
+
+    .video-background {
+      position: fixed;
+      overflow: hidden;
+      z-index: -1;
+    }
+  
+    .video-background iframe {
+      position: absolute;
+      border: none;
+      pointer-events: none; /* tıklamayı engeller */
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+}
+
+
+nav{
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: flex-start;
+right: 0;
+}
+
+.boxes{
+    transform: scale(.95);
+}
+
+
+  }
+
+
+  
